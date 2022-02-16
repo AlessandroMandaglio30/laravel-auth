@@ -6,8 +6,8 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card mb-5">
-                <div class="card-header">
-                    <span class="text-muted">{{$post->created_at}}</span>
+                <div class="card-header">s
+                    {{ $post->title }}
                 </div>
                 
                 <div class="card-body">

@@ -16,7 +16,7 @@
                             {{ $post->content }}
                         </p>
                         <div class="text-right">
-                            <a href="{{route('posts.show', $post->slug)}}" class="btn btn-primary">Leggi post</a>
+                           <a href="{{route("posts.show", $post["id"])}}" class="btn btn-primary">Leggi post</a>
                         </div>
                     </div>
                 </div>

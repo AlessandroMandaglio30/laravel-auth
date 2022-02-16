@@ -49,14 +49,13 @@ class PostsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($slug)
-    { {
+    public function show(Post $post)
+    {
 
-            $post = Post::where('slug', $slug)->first();
 
-            return view('admin.posts.show', compact('post'));
-        }
+        return view('admin.posts.show', compact('post'));
     }
+
 
     /**
      * Show the form for editing the specified resource.
